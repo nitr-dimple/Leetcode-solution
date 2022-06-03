@@ -23,3 +23,11 @@ Output: [5]
 - 1 <= n <= 500
 - -500 <= Node.val <= 500
 - 1 <= left <= right <= n
+
+## Solution:
+
+### Algorithm:
+
+1. Traverse the list till we get the left node and save previous nodes in prev.
+2. Save the currnet temp node in p. The current temp node will be the last node in the reversed list so start adding the next node at the begining of the list p till we reach node at right position.
+3. Now change the pointer of first and last node of reversed list to merge in the original list.
