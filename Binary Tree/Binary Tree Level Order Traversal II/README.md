@@ -26,8 +26,8 @@ Output: []
 ## Constraints:
 
 - The number of nodes in the tree is in the range [0, 2000].
-- -100 <= Node.val <= 100
+- -1000 <= Node.val <= 1000
 
 ## Algorithm
 
-Calculate the left height and right height of subtreee and whichever is maximum, return that.
+Same as binary tree level order traversal, just add the list at the begining of the list.
