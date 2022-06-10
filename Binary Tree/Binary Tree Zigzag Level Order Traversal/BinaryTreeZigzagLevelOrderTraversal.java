@@ -23,7 +23,6 @@ class Solution {
         while(queue.size() != 0){
             int len = queue.size();
             List<Integer> l = new ArrayList<>();
-
             for(int i = 0; i < len; i++){
                 TreeNode node = queue.remove();
                 if(node.left != null) queue.add(node.left);
