@@ -42,3 +42,6 @@ Time complexity: O(n<sup>2</sup>)
 ### Approach 2:
 
 Use map to search an index in inorder array.
+
+Time complexity: O(n)
+
