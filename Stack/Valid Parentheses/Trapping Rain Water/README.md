@@ -41,3 +41,11 @@ Using Stack:
   - if stack is empty then sum = sum + (i- stack.peek()-1) \* (height[i] - val)
   - push i to the stack.
 - return sum.
+
+#### Time complexity :O(n)
+
+#### Space complexity : O(n)
+
+### Approach-2 Using 2 pointer
+
+- Maintain 2 variable to store the left maximum and the right maximum values.Since water trapped at any element = min(max_left, max_right) – arr[i]. Calculate water trapped on smaller elements out of A[lo] and A[hi] first, and move the pointers till lo doesn’t cross hi.
