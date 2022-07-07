@@ -23,9 +23,7 @@ Output: 9
 - 1 <= n <= 2 \* 10<sup>4</sup>
 - 0 <= height[i] <= 10<sup>5</sup>
 
-### Approach 1:
-
-Using Stack:
+### Approach 1: Using Stack-
 
 #### Algorithm :
 
@@ -49,3 +47,7 @@ Using Stack:
 ### Approach-2 Using 2 pointer
 
 - Maintain 2 variable to store the left maximum and the right maximum values.Since water trapped at any element = min(max_left, max_right) – arr[i]. Calculate water trapped on smaller elements out of A[lo] and A[hi] first, and move the pointers till lo doesn’t cross hi.
+
+#### Time complexity :O(n)
+
+#### Space complexity : O(1)
