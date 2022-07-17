@@ -46,6 +46,7 @@ For enqueue operation:
 - push the element to stack s2
 
 <br>
-For pop operations:
-- if stack s1 is not empty, pop  elements from s2 to s1 until s1 is not empty.
+For Dequeue operations:
+
+- if stack s1 is not empty, pop elements from s2 to s1 until s1 is not empty.
 - pop element from stack s1.
