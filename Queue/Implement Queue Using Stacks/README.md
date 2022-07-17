@@ -41,12 +41,11 @@ myQueue.empty(); // return false
 ## Approach:
 
 Maitain to stack s1 and s2. <br>
-For every push operation:
+For enqueue operation:
 
-- enqueue the element to q2.
-- dequeue one by one all the element from q1 and enqueue the it to q2.
-- swap the name of q2 and q1.
+- push the element to stack s2
 
 <br>
 For pop operations:
-- Dequeue an elements from q1.
+- if stack s1 is not empty, pop  elements from s2 to s1 until s1 is not empty.
+- pop element from stack s1.
