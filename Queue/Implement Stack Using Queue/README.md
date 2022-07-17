@@ -37,3 +37,18 @@ myStack.empty(); // return False
 - 1 <= x <= 9
 - At most 100 calls will be made to push, pop, top, and empty.
 - All the calls to pop and top are valid.
+
+## Approach:
+
+This approach is push operation costly approach
+
+Maitain to queue q1 and q2. <br>
+For every push operation:
+
+- enqueue the element to q2.
+- dequeue one by one all the element from q1 and enqueue the it to q2.
+- swap the name of q2 and q1.
+
+<br>
+For pop operations:
+- Dequeue an elements from q1.
