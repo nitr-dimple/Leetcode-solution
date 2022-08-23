@@ -30,22 +30,22 @@ class Solution {
     }
     
     public void pointNext(Node root, Node parent, int id){
-if(root == null) return;
-        if(id == 1){
-            if(parent.right != null) root.next = parent.right;
-            else if(parent.next != null){
-                Node temp = parent.next;
-                while(temp != null && temp.left == null && temp.right == null) temp = temp.next;
-                if(temp != null && temp.left != null) root.next = temp.left;
-                else if(temp != null && temp.right != null) root.next = temp.right;
+          if(root == null) return;
+          if(id == 1){
+               if(parent.right != null) root.next = parent.right;
+               else if(parent.next != null){
+                    Node temp = parent.next;
+                    while(temp != null && temp.left == null && temp.right == null) temp = temp.next;
+                    if(temp != null && temp.left != null) root.next = temp.left;
+                    else if(temp != null && temp.right != null) root.next = temp.right;
             }
         }
-        if(id == 2){
-            Node temp = parent.next;
-            while(temp != null && temp.left == null && temp.right == null) temp = temp.next;
-            if(temp != null && temp.left != null) root.next = temp.left;
-            else if(temp != null && temp.right != null) root.next = temp.right;
-        }
+          if(id == 2){
+               Node temp = parent.next;
+               while(temp != null && temp.left == null && temp.right == null) temp = temp.next;
+               if(temp != null && temp.left != null) root.next = temp.left;
+               else if(temp != null && temp.right != null) root.next = temp.right;
+          }
         pointNext(root.right, root, 2);
         pointNext(root.left, root, 1);
     }
