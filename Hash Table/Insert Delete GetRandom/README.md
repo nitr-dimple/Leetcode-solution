@@ -35,7 +35,7 @@ randomizedSet.getRandom(); // Since 2 is the only number in the set, getRandom()
 - At most 2 \* 10<sup>5 </sup> calls will be made to insert, remove, and getRandom.
 - There will be at least one element in the data structure when getRandom is called.
 
-## Approache
+## Approach
 
 - maintain one list to find the location of the element inserted and one map which keeps track of which value inserted at what location
 - insertion is easy. simply add element and its location to the map, also add element to the list
