@@ -20,15 +20,10 @@ Input: arr = [1,2,3,4,5], k = 4, x = -1
 Output: [1,2,3,4]
 ```
 
-### Example 3:
-```
-Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
-Output: [8,9,9,9,0,0,0,1]
-```
-
 ### Constraints:
 
-- The number of nodes in each linked list is in the range [1, 100].
-- 0 <= Node.val <= 9
-- It is guaranteed that the list represents a number that does not have leading zeros.
+- 1 <= k <= arr.length
+- 1 <= arr.length <= 10<sup>4</sup>
+- arr is sorted in ascending order.
+- -10<sup>4</sup> <= arr[i], x <= 10<sup>4</sup>
 
