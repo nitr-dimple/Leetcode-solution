@@ -4,11 +4,7 @@ class KthLargest {
 
     public KthLargest(int k, int[] nums) {
         size = k;
-        int i=0;
-        for(; i<k && i<nums.length; i++)
-            pq.add(nums[i]);
-
-        for(; i< nums.length;i++)
+        for(int i=0; i< nums.length;i++)
             add(nums[i]);
     }
     
